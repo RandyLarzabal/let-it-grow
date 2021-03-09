@@ -3,11 +3,11 @@ const path = require('path')
 
 const app = express()
 
-app.use(express.static('./dist/truc'))
+app.use(express.static('./dist/let-it-grow'))
 
 app.get('/*', ((req, res) =>
 
-  res.sendFile("index.html", {root: 'dist/truc'})))
+  res.sendFile("index.html", {root: 'dist/let-it-grow'})))
 
 
 app.listen(process.env.PORT || 8000)
