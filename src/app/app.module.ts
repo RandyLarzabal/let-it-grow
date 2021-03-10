@@ -15,6 +15,7 @@ import { EquipePageComponent } from './equipe-page/equipe-page.component';
 import { DonPageComponent } from './don-page/don-page.component';
 import { ActualitePageComponent } from './actualite-page/actualite-page.component';
 import { LigappPageComponent } from './ligapp-page/ligapp-page.component';
+import { ExpeditionPageComponent } from './expedition-page/expedition-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LigappPageComponent } from './ligapp-page/ligapp-page.component';
     EquipePageComponent,
     DonPageComponent,
     ActualitePageComponent,
-    LigappPageComponent
+    LigappPageComponent,
+    ExpeditionPageComponent
   ],
   imports: [
     BrowserModule,
