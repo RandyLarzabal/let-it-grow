@@ -13,6 +13,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ErreurPageComponent } from './erreur-page/erreur-page.component';
 import { EquipePageComponent } from './equipe-page/equipe-page.component';
 import { DonPageComponent } from './don-page/don-page.component';
+import { ActualitePageComponent } from './actualite-page/actualite-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DonPageComponent } from './don-page/don-page.component';
     HomePageComponent,
     ErreurPageComponent,
     EquipePageComponent,
-    DonPageComponent
+    DonPageComponent,
+    ActualitePageComponent
   ],
   imports: [
     BrowserModule,
