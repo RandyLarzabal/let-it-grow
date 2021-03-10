@@ -14,6 +14,7 @@ import { ErreurPageComponent } from './erreur-page/erreur-page.component';
 import { EquipePageComponent } from './equipe-page/equipe-page.component';
 import { DonPageComponent } from './don-page/don-page.component';
 import { ActualitePageComponent } from './actualite-page/actualite-page.component';
+import { LigappPageComponent } from './ligapp-page/ligapp-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ActualitePageComponent } from './actualite-page/actualite-page.componen
     ErreurPageComponent,
     EquipePageComponent,
     DonPageComponent,
-    ActualitePageComponent
+    ActualitePageComponent,
+    LigappPageComponent
   ],
   imports: [
     BrowserModule,
