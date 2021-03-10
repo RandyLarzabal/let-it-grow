@@ -10,6 +10,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ErreurPageComponent } from './erreur-page/erreur-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomePageComponent } from './home-page/home-page.component';
     FooterComponent,
     NavbarComponent,
     ContactPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    ErreurPageComponent
   ],
   imports: [
     BrowserModule,
