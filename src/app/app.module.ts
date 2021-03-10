@@ -12,6 +12,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ErreurPageComponent } from './erreur-page/erreur-page.component';
 import { EquipePageComponent } from './equipe-page/equipe-page.component';
+import { DonPageComponent } from './don-page/don-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EquipePageComponent } from './equipe-page/equipe-page.component';
     ContactPageComponent,
     HomePageComponent,
     ErreurPageComponent,
-    EquipePageComponent
+    EquipePageComponent,
+    DonPageComponent
   ],
   imports: [
     BrowserModule,
