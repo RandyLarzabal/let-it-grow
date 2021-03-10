@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
