@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-expedition-page',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpeditionPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ExpeditionService: ExpeditionService) {
+  }
 
   ngOnInit(): void {
   }
+
 
 }
