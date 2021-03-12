@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {PostsService} from "./posts.service";
+import {Subscription} from "rxjs";
+import {IPost} from "./posts.interface";
 
 @Component({
   selector: 'app-actualite-page',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActualitePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private PostsService: PostsService) {
+  }
+
+  private subscription: Subscription;
+  posts: IPost[];
+
 
   ngOnInit(): void {
+    this.subscription = this.PostsService.posts$.subscribe(() => {
+      this.posts = this.PostsService.posts$.getValue()
+    })
   }
 
 }
