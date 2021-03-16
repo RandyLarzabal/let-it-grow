@@ -1,5 +1,12 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+
+
+
+
+import {ReactiveFormsModule} from "@angular/forms";
+import {ConnectionService} from "./contact-page/connection.service";
+import {HttpClientModule} from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +25,7 @@ import { LigappPageComponent } from './ligapp-page/ligapp-page.component';
 import { ExpeditionPageComponent } from './expedition-page/expedition-page.component';
 import { PostCardComponent } from './actualite-page/post-card/post-card.component';
 import { PostPageComponent } from './post-page/post-page.component';
+
 
 @NgModule({
   declarations: [
@@ -42,9 +50,11 @@ import { PostPageComponent } from './post-page/post-page.component';
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule, HttpClientModule
   ],
-  providers: [],
+  providers: [ConnectionService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
