@@ -1,8 +1,10 @@
 <!--Navbar-->
+
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark forestgreen fixed-top" [containerInside]="false">
 
+
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Let It Grow</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a class="navbar-brand" routerLink="/">Let It Grow</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
@@ -10,16 +12,16 @@
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="tree"></mdb-icon>Expédition</a>
+        <a class="nav-link waves-light" routerLink="/expedition" mdbWavesEffect><mdb-icon fas icon="tree"></mdb-icon>Expédition</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="mobile"></mdb-icon>LIG App</a>
+        <a class="nav-link waves-light" routerLink="/lig"  mdbWavesEffect><mdb-icon fas icon="mobile"></mdb-icon>LIG App</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="newspaper"></mdb-icon>Actualités</a>
+        <a class="nav-link waves-light" routerLink="/actualites"  mdbWavesEffect><mdb-icon fas icon="newspaper"></mdb-icon>Actualités</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="street-view"></mdb-icon>Qui sommes-nous ?</a>
+        <a class="nav-link waves-light" routerLink="/qui-sommes-nous"  mdbWavesEffect><mdb-icon fas icon="street-view"></mdb-icon>Qui sommes-nous ?</a>
       </li>
       <li class="nav-item">
         <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="euro-sign"></mdb-icon>Faire un don</a>
