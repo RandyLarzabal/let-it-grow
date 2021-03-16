@@ -2,6 +2,7 @@
   width: 300px;
   box-shadow: none;
 
+
   .card-body {
     padding: 0;
   }
@@ -14,10 +15,12 @@
 
 .post-card-title {
   font-weight: bolder;
+  color: black;
 }
 
 .post-card-img {
   margin-bottom: 1rem;
+  display: block;
 
   .img-fluid {
     border-radius: 5px;
