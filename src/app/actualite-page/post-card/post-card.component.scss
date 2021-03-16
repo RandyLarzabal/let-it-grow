@@ -1,0 +1,29 @@
+.post-card {
+  width: 300px;
+  box-shadow: none;
+
+
+  .card-body {
+    padding: 0;
+  }
+}
+
+.post-card-date {
+  font-size: 11px;
+  color: #8e8e8e;
+}
+
+.post-card-title {
+  font-weight: bolder;
+  color: black;
+}
+
+.post-card-img {
+  margin-bottom: 1rem;
+  display: block;
+
+  .img-fluid {
+    border-radius: 5px;
+  }
+
+}
