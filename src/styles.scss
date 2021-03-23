@@ -19,20 +19,23 @@ body {
 
 // TITLES
 h1 {
-  font-size: 96px;
+  font-size: 64px;
   font-family: 'Montserrat', sans-serif;
+
+  &.hero-title {
+    font-size: 96px;
+  }
+
+  span {
+    color: $green;
+  }
 }
 
 h2 {
-  font-size: 64px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h3 {
   font-size: 48px;
 }
 
-h4 {
+h3 {
   font-size: 24px;
 }
 
