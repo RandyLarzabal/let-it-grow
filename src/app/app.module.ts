@@ -8,12 +8,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {SharedModule} from './shared/shared.module';
 import {ButtonModule} from './shared/button/button.module';
+import { TeamComponent } from './pages/team/team.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
