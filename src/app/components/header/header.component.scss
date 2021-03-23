@@ -6,7 +6,8 @@ header {
   display: flex;
   align-items: center;
 
-  .sidebar {
+  .burger {
+    width: 150px;
     text-align: center;
 
     img {
@@ -16,8 +17,11 @@ header {
     }
   }
 
-  h3 {
-    color: $grey;
-  }
+  .header {
+    width: 100%;
 
+    h3 {
+      color: $grey;
+    }
+  }
 }
