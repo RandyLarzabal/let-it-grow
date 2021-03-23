@@ -25,10 +25,6 @@ h1 {
   &.hero-title {
     font-size: 96px;
   }
-
-  span {
-    color: $green;
-  }
 }
 
 h2 {
@@ -41,6 +37,10 @@ h3 {
 
 p{
   font-size: 18px;
+}
+
+.green {
+  color: $green;
 }
 
 // CONTAINER
