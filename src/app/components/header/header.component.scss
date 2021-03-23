@@ -6,18 +6,18 @@ header {
   display: flex;
   align-items: center;
 
-  .container {
-    display: flex;
+  .sidebar {
+    text-align: center;
 
     img {
       width: 44px;
       height: 24px;
       cursor: pointer;
     }
+  }
 
-    h3 {
-      color: $grey;
-    }
+  h3 {
+    color: $grey;
   }
 
 }
