@@ -3,18 +3,21 @@
 header {
   width: 100%;
   height: 200px;
-  line-height: 200px;
+  display: flex;
+  align-items: center;
 
-  .container {
-    display: flex;
+  .sidebar {
+    text-align: center;
 
     img {
-      transform: translateX(-200px);
+      width: 44px;
+      height: 24px;
       cursor: pointer;
     }
-
-    h3 {
-      color: $grey;
-    }
   }
+
+  h3 {
+    color: $grey;
+  }
+
 }
