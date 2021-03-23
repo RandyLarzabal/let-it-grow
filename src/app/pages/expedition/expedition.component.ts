@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpeditionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ExpeditionService: ExpeditionService) { }
 
   ngOnInit(): void {
   }
