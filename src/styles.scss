@@ -13,28 +13,34 @@ $darkGrey: #232323;
 
 body {
   background-color: $darkGrey;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
 }
 
 // TITLES
 h1 {
-  font-size: 96px;
+  font-size: 64px;
+  font-family: 'Montserrat', sans-serif;
+
+  &.hero-title {
+    font-size: 96px;
+  }
 }
 
 h2 {
-  font-size: 64px;
-  
-}
-
-h3 {
   font-size: 48px;
 }
 
-h4 {
+h3 {
   font-size: 24px;
 }
 
 p{
   font-size: 18px;
+}
+
+.green {
+  color: $green;
 }
 
 // CONTAINER
