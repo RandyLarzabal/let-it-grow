@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ExpeditionComponent } from './pages/expedition/expedition.component';
 import {SharedModule} from './shared/shared.module';
 import {ButtonModule} from './shared/button/button.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {ButtonModule} from './shared/button/button.module';
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
