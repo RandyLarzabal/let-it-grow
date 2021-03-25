@@ -9,13 +9,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {SharedModule} from './shared/shared.module';
 import {ButtonModule} from './shared/button/button.module';
 import { TeamComponent } from './pages/team/team.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarComponent,
-    TeamComponent
+    TeamComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
