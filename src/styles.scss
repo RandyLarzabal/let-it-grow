@@ -17,6 +17,15 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+ul {
+  list-style: none;
+
+  li a {
+    text-decoration: none;
+    color: $white;
+  }
+}
+
 // TITLES
 h1 {
   font-size: 64px;
