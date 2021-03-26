@@ -2,6 +2,10 @@ main {
   display: flex;
 
   .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 200px);
 
     p span {
       transform: rotate(90deg);
@@ -9,6 +13,14 @@ main {
   }
 
   .content {
+    display: flex;
 
+    .left {
+
+    }
+
+    .right {
+
+    }
   }
 }
