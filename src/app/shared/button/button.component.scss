@@ -8,9 +8,16 @@ button {
   border: 3px solid $green;
   border-radius: 35px;
   font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color .1s ease-in-out;
 
   &:focus {
     outline: none;
+  }
+
+  &:hover {
+    background-color: $green;
+    transition: background-color .1s ease-in-out;
   }
 }
