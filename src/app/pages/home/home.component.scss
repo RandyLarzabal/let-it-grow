@@ -7,15 +7,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
     padding: 15px;
 
     p span {
-      transform: rotate(90deg);
+      color: $grey;
+      writing-mode: vertical-lr;
+      margin-top: 5px;
     }
 
     .scroll p {
       margin-bottom: 10px;
+      font-size: 14px;
     }
   }
 
@@ -23,17 +26,94 @@ main {
     display: flex;
 
     .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30%;
 
+      div h1 {
+        margin-bottom: 10%;
+        width: 600px;
+        position: relative;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        li a {
+          color: $grey;
+
+          &:hover {
+            color: $white;
+            transition: color .2s ease-in-out;
+          }
+        }
+      }
     }
 
     .right {
+      width: 70%;
 
-      img {
+      .main-img {
         position: absolute;
         top: 0;
         right: 0;
-        height: 100vh;
+        height: calc(100vh - 50px);
+        width: 60%;
+        object-fit: cover;
         z-index: -1;
+      }
+
+      .actualite {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        height: 200px;
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        background-color: $darkGrey;
+        cursor: pointer;
+
+        .actu-left {
+          padding: 40px 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .grey {
+            font-size: 14px;
+            color: $grey;
+          }
+
+          div p {
+            margin-bottom: 15px;
+          }
+
+          div .green {
+            font-size: 14px;
+          }
+        }
+
+        .actu-right {
+          width: 250px;
+          position: relative;
+
+          img {
+            width: 250px;
+            height: 200px;
+          }
+
+          .arrow {
+            width: 70px;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            transform: translateX(50%);
+          }
+        }
       }
     }
   }
