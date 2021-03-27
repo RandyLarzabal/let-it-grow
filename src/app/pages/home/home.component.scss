@@ -77,6 +77,10 @@ main {
         background-color: $darkGrey;
         cursor: pointer;
 
+        &:hover .actu-right .arrow {
+          transform: translateX(200px);
+        }
+
         .actu-left {
           padding: 40px 50px;
           display: flex;
@@ -104,6 +108,7 @@ main {
           img {
             width: 250px;
             height: 200px;
+            opacity: 80%;
           }
 
           .arrow {
@@ -112,6 +117,7 @@ main {
             bottom: 0;
             right: 50%;
             transform: translateX(50%);
+            transition: transform .3s ease-in-out;
           }
         }
       }
