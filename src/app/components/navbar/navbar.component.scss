@@ -6,3 +6,12 @@ div {
   left: -400px;
   top: 0;
 }
+
+.open {
+
+  //left:0;
+
+  //ou
+  
+  transform: translateX(400px)
+}
