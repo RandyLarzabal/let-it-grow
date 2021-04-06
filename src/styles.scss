@@ -54,7 +54,7 @@ p{
 
 // CONTAINER
 .container {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0 auto;
 
   .content {
@@ -63,5 +63,5 @@ p{
 }
 
 .sidebar {
-  min-width: 150px;
+  width: 150px;
 }
