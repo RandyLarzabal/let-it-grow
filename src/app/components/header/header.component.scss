@@ -3,15 +3,22 @@
 header {
   width: 100%;
   height: 200px;
-  line-height: 200px;
+  display: flex;
+  align-items: center;
 
-  .container {
-    display: flex;
+  .burger {
+    width: 150px;
+    text-align: center;
 
     img {
-      transform: translateX(-200px);
+      width: 44px;
+      height: 24px;
       cursor: pointer;
     }
+  }
+
+  .header {
+    width: 100%;
 
     h3 {
       color: $grey;
