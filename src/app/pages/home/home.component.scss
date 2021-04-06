@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: calc(100vh - 250px);
+    height: calc(100vh - 350px);
     padding: 15px;
 
     p span {
@@ -33,12 +33,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 30%;
+        width: calc(40% - 180px);
 
         div h1 {
-          margin-bottom: 10%;
-          width: 600px;
+          margin-bottom: 20%;
+          width: 700px;
           position: relative;
+          font-size: 96px;
         }
 
         ul {
@@ -58,7 +59,7 @@
       }
 
       .right {
-        width: 70%;
+        width: 60%;
 
         .main-img {
           position: absolute;
@@ -68,6 +69,7 @@
           width: 60%;
           object-fit: cover;
           z-index: -1;
+          filter: brightness(80%);
         }
 
         .actualite {

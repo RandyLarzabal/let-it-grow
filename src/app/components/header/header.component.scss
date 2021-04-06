@@ -1,11 +1,11 @@
 @import "../../../styles";
 
-.header {
+header {
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 
   .burger {
-    position: absolute;
     width: 150px;
     text-align: center;
 
@@ -16,18 +16,13 @@
     }
   }
 
-  header {
-    width: 100%;
+  .container {
     height: 200px;
     display: flex;
     align-items: center;
 
-    .content {
-      width: 100%;
-
-      h3 {
-        color: $grey;
-      }
+    h3 {
+      color: $grey;
     }
   }
 }
