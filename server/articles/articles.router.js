@@ -1,8 +1,13 @@
 const express = require('express');
+const articleController = require('./articles.controller');
 const router = express.Router();
 
 router.get('/', ((req, res) => {
-  res.send('tout les articles')
+  articleController.findAll(req, res)
+}));
+
+router.put('/', ((req, res) => {
+  articleController.addOne(req, res)
 }));
 
 router.get('/:id', ((req, res) => {
