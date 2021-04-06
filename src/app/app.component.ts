@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'let-it-grow';
 
+  /*
   onClick = () => {
     document.querySelector('.navbar').style.transform = 'translateX(400px)';
   }
+  */
 }
