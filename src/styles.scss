@@ -54,15 +54,14 @@ p{
 
 // CONTAINER
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
-
-  .sidebar {
-    width: 150px;
-    text-align: center;
-  }
 
   .content {
     width: 100%;
   }
+}
+
+.sidebar {
+  min-width: 150px;
 }
