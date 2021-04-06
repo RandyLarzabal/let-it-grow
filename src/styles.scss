@@ -57,11 +57,11 @@ p{
   max-width: 1440px;
   margin: 0 auto;
 
-  .sidebar {
-    min-width: 150px;
-  }
-
   .content {
     width: 100%;
   }
+}
+
+.sidebar {
+  min-width: 150px;
 }
