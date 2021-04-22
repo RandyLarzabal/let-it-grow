@@ -1,0 +1,10 @@
+<div class="container">
+
+<app-title [greenText]="'Actu'" [whiteText]="'alites'"></app-title>
+
+  <div *ngFor="let actualite of actualites; let isEven = even;">
+    <app-actualite-card [actualite]="actualite" [pair]="isEven">
+
+    </app-actualite-card>
+  </div>
+</div>
