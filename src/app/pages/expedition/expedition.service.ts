@@ -10,27 +10,27 @@ import {HttpClient} from '@angular/common/http';
 export class ExpeditionService {
 
   // URL which returns list of JSON items (API end-point URL)
-  private readonly URL = 'http://localhost:8000/api/articles';
+  private readonly URL = 'http://localhost:8000/api/expeditions';
 
   private expeditions: IExpedition[] = [];
   constructor(private http: HttpClient) {
+    this.loadInitialData();
   }
 
 
   public expeditions$: BehaviorSubject<IExpedition[]> = new BehaviorSubject(this.expeditions);
 
-  resolveItems(): Observable<any> {
-    console.log('Request is sent!');
-    // this.http is a HttpClient library provide by @angular/common
-    // we are calling .get() method over this.http object
-    // this .get() method takes URL to call API
-    return this.http.get(this.URL);
-  }
-  // getALlExpeditions(): IExpedition[] {
 
-  // }
-
-  deleteExpeditionById(id: number): void {
+  // tslint:disable-next-line:typedef
+  loadInitialData() {
+    return this.http.get(this.URL)
+      .subscribe(
+        (res: {data: IExpedition[]}) => {
+          this.expeditions.push(...res.data);
+        },
+        err => console.log('Error retrieving Todos')
+      );
 
   }
+
 }
