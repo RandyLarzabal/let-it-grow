@@ -1,0 +1,67 @@
+@import "../../../styles";
+
+.actualite-card-container {
+  height: 300px;
+  background-color: $grey;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom:5rem;
+
+  &::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-bottom: 2px solid $green;
+    border-left: 2px solid $green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.order-other{
+    .actualite-card-content {
+      order: 2;
+    }
+
+    &::after {
+      content: "";
+      height: 50px;
+      width: 50px;
+      border-bottom: 2px solid $green;
+      border-right: 2px solid $green;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: unset;
+      border-left: none;
+    }
+  }
+
+  .actualite-card-content {
+    padding: 65px 55px;
+
+    .actualite-card-title {
+      font-size: 24px;
+      color: $green;
+      font-weight: 400;
+      margin-bottom:30px;
+    }
+
+    .actualite-card-description {
+      font-size: 18px;
+      font-weight: 400
+    }
+  }
+
+  .actualite-card-img-container {
+    width: 400px;
+
+    .actualite-card-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
