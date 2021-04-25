@@ -3,7 +3,7 @@ let mongoose = require('mongoose')
 
 //Schema Model
 
-let articleSchema = mongoose.Schema({
+let expeditionSchema = mongoose.Schema({
   title: {
     type: String,
     required: true,
@@ -15,7 +15,7 @@ let articleSchema = mongoose.Schema({
 })
 
 //Export Article Model
-let Article = module.exports = mongoose.model("article", articleSchema)
+let Expedition = module.exports = mongoose.model("expedition", expeditionSchema)
 
 /*module.exports.get = function (callback, limit) {
   Article.find(callback).limit(limit)

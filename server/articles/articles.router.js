@@ -11,7 +11,12 @@ router.put('/', ((req, res) => {
 }));
 
 router.get('/:id', ((req, res) => {
-  res.send('je veux cet  article ' + req.params.id)
-}));
+  articleController.find(req,res)
+}))
+
+router.delete('/:id',(((req, res) => {
+  articleController.remove(req,res)
+})))
+
 
 module.exports = router;

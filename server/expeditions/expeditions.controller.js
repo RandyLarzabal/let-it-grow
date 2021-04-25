@@ -1,9 +1,9 @@
 //const articlesService = require("./articles.service");
-const Article = require('./articles.model')
+const Expedition = require('./expeditions.model')
 
 
 const findAll = (req, res) => {
-  Article.find(function (err, article) {
+  Expedition.find(function (err, expedition) {
     if (err)
       res.json({
         status: "error",
@@ -12,13 +12,13 @@ const findAll = (req, res) => {
     res.json({
       status: "success",
       message: "Got Bio Successfully!",
-      data: article
+      data: expedition
     });
   });
 };
 
 const find = (req, res) => {
-  Article.findOne({_id: req.params.id}, function (err, article) {
+  Expedition.findOne({_id: req.params.id}, function (err, expedition) {
     if (err)
       res.json({
         status: "error",
@@ -27,13 +27,13 @@ const find = (req, res) => {
     res.json({
       status: "success",
       message: "Got Bio Successfully!",
-      data: article
+      data: expedition
     });
   });
 };
 
 const remove = (req, res) => {
-  Article.deleteOne({_id: req.params.id}, {},function (err) {
+  Expedition.deleteOne({_id: req.params.id}, {},function (err) {
     if (err)
       res.json({
         status: "error",
@@ -43,16 +43,16 @@ const remove = (req, res) => {
 };
 
 const addOne = function (req, res) {
-  let article = new Article();
-  article.title = req.body.title;
-  article.description = req.body.description;
+  let expedition = new Expedition();
+  expedition.title = req.body.title;
+  expedition.description = req.body.description;
 //Save and check error
-  article.save(function (err) {
+  expedition.save(function (err) {
     if (err)
       res.json(err);
     res.json({
       message: "New Article Added!",
-      data: article
+      data: expedition
     });
   });
 };
