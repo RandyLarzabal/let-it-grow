@@ -32,14 +32,7 @@ export class ActualiteService {
   }
 
   getLast() {
-    this.http.get(this.URL)
-      .subscribe(
-        (res: { data: IActualite[] }) => {
-          this.actualites.push(...res.data);
-        },
-        err => console.log('Error retrieving Todos')
-      );
-    return undefined;
+    return this.actualites$.getValue()
   }
 
 

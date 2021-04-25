@@ -17,17 +17,17 @@ export class CarouselComponent implements OnInit {
       picture: "randy"
     },
     {
-      name: "Randy Larzabal",
+      name: "Steven Lator",
       description: "En l'an 2119, où grelottez-vous en catimini ? Ce gendarme impatient boudait. La marseillaise ne veut plus élever des souffles. Arlette Laguiller déclinait.",
       picture: "steven"
     },
     {
-      name: "Randy Larzabal",
+      name: "Thomas Faure",
       description: "Les mimes essuient les ardoises dansantes. Lebron James se gave de cris à toute vitesse. Des dizaines de candidats ne percent pas les tubas.",
       picture: "thomas"
     },
     {
-      name: "Randy Larzabal",
+      name: "Ugo Boccassini",
       description: "Le policier tintinnabule en tricotant des lignes efficaces. L'émissaire débattra de quatre fromages.",
       picture: "ugo"
     },

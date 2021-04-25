@@ -7,7 +7,8 @@
       <div class="content">
         <h2>{{member.name}}</h2>
         <p>{{member.description}}</p>
-        <app-button>Contactez-moi</app-button>
+        <app-button><a style="color: white;text-decoration:none" href="mailto:randy.larzabal@ynov.com">Contactez-moi</a>
+        </app-button>
       </div>
       <div class="image-container">
         <img class="float-left" src="../../../../assets/img/team/{{member.picture}}.png" alt="">
@@ -15,7 +16,8 @@
     </div>
 
     <div class="selector">
-      <button *ngFor="let member of members; let index = index" (click)="handleImageClick(index)" class="btn {{index === visible ? 'active' : ''}}"></button>
+      <button *ngFor="let member of members; let index = index" (click)="handleImageClick(index)"
+              class="btn {{index === visible ? 'active' : ''}}"></button>
     </div>
   </div>
 </div>

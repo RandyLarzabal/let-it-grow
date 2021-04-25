@@ -3,7 +3,11 @@ const Article = require('./articles.model')
 
 
 const findAll = (req, res) => {
-  Article.find(function (err, article) {
+  let sort = {};
+  if (req.query.sortDate) {
+    sort.creationDate = 1
+  }
+  Article.find({},{},{sort}, function (err, article) {
     if (err)
       res.json({
         status: "error",
@@ -15,6 +19,7 @@ const findAll = (req, res) => {
       data: article
     });
   });
+
 };
 
 const find = (req, res) => {
@@ -33,7 +38,7 @@ const find = (req, res) => {
 };
 
 const remove = (req, res) => {
-  Article.deleteOne({_id: req.params.id}, {},function (err) {
+  Article.deleteOne({_id: req.params.id}, {}, function (err) {
     if (err)
       res.json({
         status: "error",

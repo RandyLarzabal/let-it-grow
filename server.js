@@ -37,7 +37,7 @@ app.use(errorMiddleware);
 app.listen(process.env.PORT || 8000)
 
 //connect to mongoose
-const dbPath = "mongodb+srv://Randy:RlA973Dady@@@cluster0.3b56s.mongodb.net/letitgrow?retryWrites=true&w=majority";
+const dbPath = "mongodb+srv://Randy:letitGrow@cluster0.3b56s.mongodb.net/letitgrow?retryWrites=true&w=majority";
 const options = {useNewUrlParser: true, useUnifiedTopology: true}
 const mongo = mongoose.connect(dbPath, options);
 mongo.then(() => {

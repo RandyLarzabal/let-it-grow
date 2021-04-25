@@ -11,14 +11,13 @@ import {ActualiteService} from "../actualite/actualite.service";
 export class HomeComponent implements OnInit {
 
   private subscription: Subscription;
-  actualite: IActualite;
+  actualites: IActualite[];
   constructor(private actualiteService: ActualiteService) {
   }
 
   ngOnInit(): void {
     this.subscription = this.actualiteService.actualites$.subscribe(() => {
-      this.actualite = this.actualiteService.getLast();
-      console.log(this.actualite);
+      this.actualites = this.actualiteService.actualites$.getValue();
     });
   }
 
