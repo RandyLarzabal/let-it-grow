@@ -4,6 +4,7 @@ import {ExpeditionComponent} from "./pages/expedition/expedition.component";
 import {ActualiteComponent} from "./pages/actualite/actualite.component";
 import {TeamComponent} from "./pages/team/team.component";
 import {HomeComponent} from "./pages/home/home.component";
+import {AdminComponent} from "./pages/admin/admin.component";
 
 const routes: Routes = [
   {
@@ -11,16 +12,19 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path:'expeditions',
-    component:ExpeditionComponent
+    path: 'expeditions',
+    component: ExpeditionComponent
   },
   {
-    path:'actualites',
-    component:ActualiteComponent
+    path: 'actualites',
+    component: ActualiteComponent
   },
   {
-    path:'equipe',
-    component:TeamComponent
+    path: 'equipe',
+    component: TeamComponent
+  }, {
+    path: 'admin',
+    component: AdminComponent
   },
   {
     path: '**',

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { ActualiteCardComponent } from './actualite-card/actualite-card.component';
 import { TitleComponent } from './title/title.component';
+import { AdminFormComponent } from './admin-form/admin-form.component';
 
 
 
 @NgModule({
-  declarations: [ButtonComponent, ActualiteCardComponent, TitleComponent],
+  declarations: [ButtonComponent, ActualiteCardComponent, TitleComponent, AdminFormComponent],
   imports: [
     CommonModule
   ],

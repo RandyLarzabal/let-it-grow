@@ -14,6 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { TeamComponent } from './pages/team/team.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ExpeditionComponent,
     NavbarComponent,
     TeamComponent,
-    CarouselComponent
+    CarouselComponent,
+    ActualiteComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
