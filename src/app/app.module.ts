@@ -10,12 +10,14 @@ import {SharedModule} from './shared/shared.module';
 import {ButtonModule} from './shared/button/button.module';
 import { ActualiteComponent } from './pages/actualite/actualite.component';
 import {HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarComponent,
+    HomeComponent,
     ActualiteComponent
   ],
   imports: [
