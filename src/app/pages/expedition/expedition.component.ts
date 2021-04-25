@@ -27,8 +27,4 @@ export class ExpeditionComponent implements OnInit {
 
   }
 
-  handleImageClick(src) {
-    console.log(src);
-  }
-
 }

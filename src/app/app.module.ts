@@ -13,8 +13,9 @@ import { ActualiteComponent } from './pages/actualite/actualite.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { TeamComponent } from './pages/team/team.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselComponent } from './pages/team/carousel/carousel.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { ExpeditionCarouselComponent } from './pages/expedition/expedition-carousel/expedition-carousel.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AdminComponent } from './pages/admin/admin.component';
     TeamComponent,
     CarouselComponent,
     ActualiteComponent,
-    AdminComponent
+    AdminComponent,
+    ExpeditionCarouselComponent
   ],
   imports: [
     BrowserModule,

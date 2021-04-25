@@ -1,0 +1,18 @@
+<div class="flex {{isEven ? 'other-order' : ''}}">
+
+  <div class="images">
+    <img *ngFor="let image of expedition.images; let index = index"
+         class="superpose {{index  === imageSelected ? 'selected' : ''}}" src="{{image.src}}" alt="foret-vietnam">
+  </div>
+  <div class="container-description">
+    <h2>{{expedition.title}}</h2>
+    <h3>{{expedition.subtitle}}</h3>
+    <p>{{expedition.description}}</p>
+    <app-button>Réserver</app-button>
+    <div>
+            <span *ngFor="let image of expedition.images; let index = index" (click)="handleImageClick(index)"
+                  class="button-image {{index  === imageSelected ? 'selected' : ''}}"></span>
+    </div>
+  </div>
+
+</div>

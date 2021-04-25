@@ -1,0 +1,76 @@
+@import "src/styles";
+
+.carousel {
+  position: relative;
+
+  .selector {
+    .btn {
+      display: inline-block;
+      margin-right: 20px;
+      height: 10px;
+      width: 10px;
+      border: 1px solid white;
+      border-radius: 25px;
+      cursor: pointer;
+      background-color: transparent;
+    }
+
+    .active {
+      border: 1px solid $green;
+    }
+  }
+
+  .member {
+    top: 50px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+
+    &.visible {
+      opacity: 1;
+    }
+
+    .content {
+      width: 250px;
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: #616161;
+        margin-bottom: 40px;
+      }
+    }
+
+    .image-container {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      height: 600px;
+      width: 550px;
+      transform: translateY(-50%);
+
+      img {
+        height: 100%;
+        width:100%;
+        object-position: top;
+        object-fit: cover;
+      }
+
+      &::after {
+        background: linear-gradient(
+            360deg, #232323, transparent);
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

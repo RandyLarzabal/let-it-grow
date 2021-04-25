@@ -3,4 +3,5 @@ export interface IActualite {
   description: string;
   img: string;
   _id: string;
+  content:string;
 }

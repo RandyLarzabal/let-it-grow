@@ -1,29 +1,14 @@
 <div class="expedition">
 
-  <div class="sidebar"></div>
-
   <div class="container">
 
-    <h1><span class="green">Exp</span>Édition</h1>
+    <app-title [greenText]="'Exp'" [whiteText]="'editions'"></app-title>
 
     <div class="expedition-container">
-      <div *ngFor="let expedition of expeditions" class="flex">
 
-        <div class="images">
-          <img *ngFor="let image of expedition.images" class="superpose" src="{{image.src}}" alt="foret-vietnam">
-        </div>
-        <div class="container-description">
-          <h2>{{expedition.title}}</h2>
-          <h3>{{expedition.subtitle}}</h3>
-          <p>{{expedition.description}}</p>
-          <app-button>Réserver</app-button>
-          <div>
-            <span *ngFor="let image of expedition.images" (click)="handleImageClick(image.src)"
-                  class="button-image"></span>
-          </div>
-        </div>
+      <app-expedition-carousel *ngFor="let expedition of expeditions;  let isEven = even;" [expedition]="expedition"
+                               [isEven]="isEven"></app-expedition-carousel>
 
-      </div>
     </div>
 
 
