@@ -6,22 +6,26 @@
 
     <h1><span class="green">Exp</span>Édition</h1>
 
-    <div class="flex">
+    <div class="expedition-container">
+      <div *ngFor="let expedition of expeditions" class="flex">
 
-      <div class="images">
-        <img *ngFor="let image of images" class="superpose" src="{{image.src}}" alt="foret-vietnam">
-      </div>
-      <div class="container-description">
-        <h2>Vietnam</h2>
-        <h3>Partez pour une courte expédition au Vietnam.</h3>
-        <p>Recommandée pour les planteurs en herbe</p>
-        <app-button>Réserver</app-button>
-        <div>
-          <span *ngFor="let image of images" (click)="handleImageClick(image.src)" class="button-image"></span>
+        <div class="images">
+          <img *ngFor="let image of expedition.images" class="superpose" src="{{image.src}}" alt="foret-vietnam">
         </div>
-      </div>
+        <div class="container-description">
+          <h2>{{expedition.title}}</h2>
+          <h3>{{expedition.subtitle}}</h3>
+          <p>{{expedition.description}}</p>
+          <app-button>Réserver</app-button>
+          <div>
+            <span *ngFor="let image of expedition.images" (click)="handleImageClick(image.src)"
+                  class="button-image"></span>
+          </div>
+        </div>
 
+      </div>
     </div>
+
 
   </div>
 </div>

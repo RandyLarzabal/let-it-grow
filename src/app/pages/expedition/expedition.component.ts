@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 
 import {ExpeditionService} from './expedition.service';
+import {Subscription} from "rxjs";
+import {IExpedition} from "./expedition.interface";
 
 @Component({
   selector: 'app-expedition',
@@ -9,19 +11,20 @@ import {ExpeditionService} from './expedition.service';
 })
 export class ExpeditionComponent implements OnInit {
 
+  private subscription: Subscription;
+  expeditions: IExpedition[];
 
-  images: any[] = [{
-    src: '../assets/img/expedition/vietnam.png'
-  }, {src: '../assets/img/expedition/inde.png'}, {src: '../assets/img/expedition/amazonie.png'},]
-
-
-  constructor(private ExpeditionService: ExpeditionService
+  constructor(private expeditionService: ExpeditionService
   ) {
   }
 
-  ngOnInit()
-    :
-    void {
+  ngOnInit(): void {
+
+    this.subscription = this.expeditionService.expeditions$.subscribe(() => {
+      this.expeditions = this.expeditionService.expeditions$.getValue();
+      console.log(this.expeditions);
+    });
+
   }
 
   handleImageClick(src) {
