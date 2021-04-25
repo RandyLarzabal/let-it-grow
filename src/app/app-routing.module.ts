@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {NavbarComponent} from "./navbar/navbar.component";
+import {ActualiteComponent} from "./pages/actualite/actualite.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: NavbarComponent
+    component: ActualiteComponent
   }, {
     path: '**',
     redirectTo: '',
