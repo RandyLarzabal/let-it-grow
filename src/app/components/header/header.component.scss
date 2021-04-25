@@ -5,14 +5,33 @@ header {
   align-items: center;
   margin-bottom: 100px;
 
-  .burger {
+  .sidebar {
     width: 150px;
     text-align: center;
+    z-index: 5;
 
-    img {
+    .burger {
+      margin: 0 auto;
       width: 44px;
       height: 24px;
       cursor: pointer;
+
+      &.exit {
+
+        #burger-1 {
+          transform: rotate(45deg);
+          transform-origin: center;
+        }
+
+        #burger-2 {
+
+        }
+
+        #burger-3 {
+          transform: rotate(-45deg);
+          transform-origin: center;
+        }
+      }
     }
   }
 
