@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick = () => {
+    document.querySelector('body').classList.toggle('open');
+    document.querySelector('.burger').classList.toggle('exit');
+  }
+
 }

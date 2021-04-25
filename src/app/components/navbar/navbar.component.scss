@@ -1,8 +1,29 @@
-div {
+@import "./src/styles";
+
+.navbar {
   width: 400px;
   height: 100vh;
-  background-color: red;
+  background-color: #2E2E2E;
   position: absolute;
   left: -400px;
   top: 0;
+
+  ul {
+    margin-top: 35vh;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li a {
+      font-size: 30px;
+      color: $grey;
+      transition: color .2s ease-in-out;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
 }

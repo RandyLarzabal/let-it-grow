@@ -16,6 +16,7 @@ body {
   background-color: $darkGrey;
   color: $white;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -65,4 +66,13 @@ p{
 
 .sidebar {
   width: 150px;
+}
+
+// NAVBAR
+body {
+  transition: transform .5s ease-in-out;
+}
+
+.open {
+  transform: translateX(400px);
 }
