@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ExpeditionComponent } from './pages/expedition/expedition.component';
 import {SharedModule} from './shared/shared.module';
 import {ButtonModule} from './shared/button/button.module';
 import { ActualiteComponent } from './pages/actualite/actualite.component';
@@ -18,14 +19,15 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     NavbarComponent,
     HomeComponent,
-    ActualiteComponent
+    ActualiteComponent,
+    ExpeditionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
     SharedModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

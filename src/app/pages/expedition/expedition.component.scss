@@ -1,0 +1,66 @@
+@import "./src/styles";
+
+.expedition {
+  display: flex;
+
+  h1 {
+    margin-bottom: 100px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+
+    .images {
+      position: relative;
+      width: 700px;
+      height: 450px;
+
+      img {
+        position: absolute;
+        width: 700px;
+        height: 450px;
+      }
+
+      #img_1 {
+        z-index: 3;
+      }
+
+      #img_2 {
+        transform: translate(-40px, 20px);
+        z-index: 2;
+      }
+
+      #img_3 {
+        transform: translate(-80px, 40px);
+        z-index: 1;
+      }
+    }
+
+    .container-description {
+      width: 400px;
+      height: 450px;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        font-family: Montserrat;
+        color: #FFFFFF;
+      }
+
+      h3 {
+        color: rgba(255, 255, 255, 0.2);
+      }
+
+      p {
+        color: #50AA8D;
+      }
+    }
+  }
+}
+
+
