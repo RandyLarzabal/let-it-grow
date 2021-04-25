@@ -11,6 +11,14 @@ let expeditionSchema = mongoose.Schema({
   description: {
     type: String,
     required: true,
+  },
+  subtitles: {
+    required: true,
+    type: String,
+  },
+  images: {
+    type: Array,
+    required: true
   }
 })
 

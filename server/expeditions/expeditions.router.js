@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
-
+const experditionController = require('./expeditions.controller');
 router.get('/', ((req, res) => {
-  res.send('toute les expeditions')
+  experditionController.findAll(req, res)
 }));
 
 router.get('/:id', ((req, res) => {
-  res.send('je veux cet  experditions ' + req.params.id)
+  experditionController.find(req, res)
 }));
 
 router.delete('/:id', ((req, res) => {
-  res.send('je veux supp cette experditions ' + req.params.id)
+  experditionController.remove(req, res)
 }));
 
-router.put("/",(((req, res) => {
-  res.send("j'ajoute cette expedition")
+router.put("/", (((req, res) => {
+  experditionController.addOne(req, res)
 })))
 
 
