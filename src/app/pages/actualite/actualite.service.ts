@@ -20,17 +20,21 @@ export class ActualiteService {
 
   public actualites$: BehaviorSubject<IActualite[]> = new BehaviorSubject(this.actualites);
 
-
-  // tslint:disable-next-line:typedef
   loadInitialData() {
     return this.http.get(this.URL)
       .subscribe(
-        (res: {data: IActualite[]}) => {
+        (res: { data: IActualite[] }) => {
           this.actualites.push(...res.data);
         },
         err => console.log('Error retrieving Todos')
       );
 
+  }
+
+  getLast() {
+    let tabActu = this.actualites$.getValue();
+    console.log(tabActu);
+    return undefined;
   }
 
 
